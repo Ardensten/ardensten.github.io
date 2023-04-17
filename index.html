@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cats and Zombies</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <div class="graphics" id="graphics">
+            <div class="overlay" id="overlay"></div>
+        </div> <!--graphics end-->
+
+        <div class="description" id="description">
+        </div> <!--description end-->
+
+        <div class="map">
+            <div class="map-tile city" id="0"></div>
+            <div class="map-tile city" id="1"></div>
+            <div class="map-tile city" id="2"></div>
+            <div class="map-tile mountain" id="3"></div>
+            <div class="map-tile mountain" id="4"></div>
+            <div class="map-tile city" id="5"></div>
+            <div class="map-tile city" id="6"></div>
+            <div class="map-tile forest" id="7"></div>
+            <div class="map-tile forest" id="8"></div>
+            <div class="map-tile mountain" id="9"></div>
+            <div class="map-tile city" id="10"></div>
+            <div class="map-tile forest" id="11"></div>
+            <div class="map-tile water" id="12"></div>
+            <div class="map-tile forest" id="13"></div>
+            <div class="map-tile beach" id="14"></div>
+            <div class="map-tile forest" id="15"></div>
+            <div class="map-tile forest" id="16"></div>
+            <div class="map-tile forest" id="17"></div>
+            <div class="map-tile beach" id="18"></div>
+            <div class="map-tile beach" id="19"></div>
+            <div class="map-tile forest" id="20"></div>
+            <div class="map-tile forest" id="21"></div>
+            <div class="map-tile beach" id="22"></div>
+            <div class="map-tile beach" id="23"></div>
+            <div class="map-tile water" id="24"></div>
+        </div> <!--map end-->
+
+        <div class="controls">
+            <br><br>
+            <button onclick="North()" type="button">North</button>
+            <br>
+            <button onclick="West()" type="button">West</button>
+            
+            <button onclick="East()" type="button">East</button>
+            <br>
+            <button onclick="South()" type="button">South</button>
+        </div> <!--controls end-->
+
+        <div class="points" id="points">
+        </div>
+        <div class="lives" id="lives">
+        </div>
+        <div class="audio-wrapper">
+            <audio id="player" controls autoplay loop>
+                <source src="audio/music.mp3" type="audio/mp3">
+            </audio>
+        </div> <!--audio-wrapper end-->
+    </div> <!--page-wrapper end-->
+    <script src="scripts/graphics.js"></script>
+</body>
+</html>

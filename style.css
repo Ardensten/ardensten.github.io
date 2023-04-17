@@ -1,0 +1,137 @@
+body{
+    background-color: black;
+    font-family: 'Creepster', cursive;
+    font-size: larger;
+}
+
+*{
+    border: solid 0px greenyellow;
+}
+
+.page-wrapper{
+    margin-left: 15px;
+    padding-bottom: 50px;
+    padding-top: 15px;
+    color: red;
+    display: grid;
+    width: 95vw;
+    height: 100vh;
+    grid-template-areas: 
+    'graphics graphics map'
+    'graphics graphics controls'
+    'description description controls'
+    'description description controls'
+    'audio-wrapper points lives';
+}
+
+
+.graphics{
+    position: relative;
+    grid-area: graphics;
+    width: 60vw;
+    height: 75vh;
+    align-items: center;
+}
+
+.graphics img{
+    width: 60vw;
+    height: 75vh;
+    border: solid 2px darkgray;
+    object-fit: cover;
+}
+
+.overlay img{
+    border: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 75%;
+    object-fit: contain;
+}
+
+.description{
+    width: 60vw;
+    grid-area: description;
+}
+
+.map {
+    margin: 5px;
+    margin-top: 0;
+    margin-right: 0;
+    padding: 10px;
+    grid-area: map;
+    background-color: darkslategray;
+    width: 30vw;
+    height: 30vw;
+    box-sizing: border-box;
+  
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+  }
+  
+
+  .map-tile{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border: solid 1px darkslategray;
+    color: black;
+    text-align: center;
+
+  }
+
+  .city{
+    background-color: darkgray;
+  }
+
+  .mountain{
+    background-color: gray;
+  }
+
+  .forest{
+    background-color: forestgreen;
+  }
+
+  .water{
+    background-color: blue;
+  }
+
+  .beach{
+    background-color: bisque;
+  }
+
+.controls{
+    margin: 5px;
+    margin-right: 0;
+    text-align: center;
+    grid-area: controls;
+    background-color: darkslategray;
+    width: 30vw;
+}
+
+.points{
+    margin: 5px;
+    text-align: center;
+    grid-area: points;
+    background-color: darkslategray;
+    width: 30vw;
+    height: 10vh;
+}
+
+.lives{
+    margin: 5px;
+    margin-right: 0;
+    text-align: center;
+    grid-area: lives;
+    background-color: darkslategray;
+    width: 30vw;
+    height: 10vh;
+}
+
+.audio-wrapper{
+    margin: 5px;
+    height: 10vh;
+}
