@@ -1,0 +1,90 @@
+body {
+    background-color: #F3DFC1;
+    font-family: 'Special Elite';
+}
+
+.main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.thinner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+}
+
+.polaroid-container {
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.polaroid {
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    margin: 5px;
+    background-color: white;
+    box-shadow: 5px 5px 5px 1px gray;
+}
+
+.polaroid-img {
+    display: block; 
+    width: 360px;
+    height: 360px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    object-fit: cover; 
+}
+
+@media (max-width: 600px) {
+    .polaroid {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: block;
+        width: 400px;
+        height: auto;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        box-shadow: 5px 5px 5px 1px gray;
+    }
+  }
+
+.handwriting {
+    font-family: 'Cedarville Cursive';
+    font-size: 30px;
+}
+
+.form {
+    margin-top: 30px;
+    padding: 0;
+}
+
+.field, .field-big {
+    box-sizing: border-box;
+    width: 70vw;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.field-big {
+    height: 10vw;
+    font-family: arial;
+}
+
+.image {
+    width: 100vw;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    font-family: 'Special Elite';
+    padding: 10px;
+}
